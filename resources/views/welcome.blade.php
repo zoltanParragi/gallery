@@ -11,12 +11,6 @@
 
 <body>
     <h1 class="text-center m-5">Gallery with Laravel</h1>
-    {{-- <?php
-    print_r($list);
-    ?>
-    @foreach ($list as $key => $filename)
-        {{ $filename }}
-    @endforeach --}}
 
     <div class="container">
         <div class="row g-3 m-3">

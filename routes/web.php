@@ -14,12 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //dd(listfiles(public_path('/images')));
-    /* dd(\Illuminate\Support\Arr::where(scandir(public_path('/images')), function ($value, $key) {
-        if(strlen($value) > 4) return $value;
-    })); */
-    /* dd(scandir(public_path('/images')), function($f) {
-        if(strlen($f) > 4) return $f;
-    }); */
     return view('welcome')->with('list', listfiles(public_path('/images')));
 });
